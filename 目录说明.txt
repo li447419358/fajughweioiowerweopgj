@@ -1,0 +1,16 @@
+|-index.html  页面
+|-list.html   页面
+|-show.html   页面
+|-statics
+|    |-css
+|    |  |-haoxuexiao
+|    |     |-style.css  css文件
+|    |     |-images  css里用到的图片
+|    |     
+|    |-images
+|    |  |-haoxuexiao  除了css里的,页面上的图片
+|    |  
+|    |  
+|    |-js 所有的脚本
+|
+|-images 页面上为了效果用到的临时图片(正式应用后最终要删除此目录)
