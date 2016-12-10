@@ -1,1 +1,245 @@
-*{margin: 0;padding: 0;}
+/*reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #444;
+    font: 12px"宋体", "Arial Narrow", HELVETICA;
+}
+
+td,
+th,
+caption {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font: 14px Verdana, Helvetica, Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+
+/*icon font*/
+
+.iconfont {
+    font-family: "iconfontyyy" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 199213 */
+    src: url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.eot');
+    src: url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.woff') format('woff'), url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.ttf') format('truetype'), url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.svg#iconfont') format('svg');
+}
+
+
+/* css common */
+
+.underline {
+    text-decoration: underline;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*color*/
+
+.bg-blue-dark {
+    background: #3da9da;
+}
+
+.bg-blue {
+    background: #5c7cfe;
+}
+
+.bg-orange {
+    background: #fc9917;
+}
+
+.text-blue-dark {
+    color: #3da9da;
+}
+
+.text-orange {
+    color: #fc9917;
+}
+
+
+/*margin*/
+
+.m-l-sm {
+    margin-left: 10px;
+}
+
+.m-l-md {
+    margin-left: 15px;
+}
+
+.m-l-lg {
+    margin-left: 25px;
+}
+
+
+/*position*/
+
+.inline {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.contentwrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+
+.header-top {
+    height: 40px;
+    line-height: 40px;
+    color: #8f8f8f;
+    background: #333;
+}
+
+.header-top a {
+    color: #8f8f8f;
+}
+
+.top_bar a {
+    margin-left: 25px;
+}
+
+.header {
+    margin-bottom: 8px;
+}
+
+.header .logo {
+    padding-top: 20px;
+}
+
+.nav {
+    padding-top: 20px;
+    height: 46px;
+    line-height: 46px;
+    margin-left: 250px;
+    text-align: right;
+}
+
+.nav li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.nav li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 50px;
+}
