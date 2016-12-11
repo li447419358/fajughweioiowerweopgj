@@ -100,26 +100,119 @@ html {
 }
 
 
-/*icon font*/
+/*icon*/
 
-.iconfont {
-    font-family: "iconfontyyy" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
+.customSelect .caret {
+    background-image: url(images/icon.png);
+    background-repeat: no-repeat;
 }
 
-@font-face {
-    font-family: 'iconfont';
-    /* project id 199213 */
-    src: url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.eot');
-    src: url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.woff') format('woff'), url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.ttf') format('truetype'), url('http://at.alicdn.com/t/font_mlpbok4qrdlsor.svg#iconfont') format('svg');
+
+/*selectbox*/
+
+select.J-select {
+    position: absolute;
+    left: -999em;
+}
+
+.customSelect {
+    position: relative;
+    float: left;
+}
+
+.customSelect .selectedValue {
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    padding: 0px 20px 0 0;
+    border-radius: 2px;
+    margin-bottom: 0;
+    color: #bababa;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.customSelect .selectList {
+    z-index: 100;
+    position: absolute;
+    left: -999em;
+    top: -999em;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.customSelect.select-open .selectList {
+    left: 0!important;
+    top: auto!important;
+}
+
+.customSelect .selectList dl {
+    background: #fff;
+}
+
+.customSelect .selectList dl.defaultScrollbar {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.customSelect dl,
+.customSelect dd {
+    margin: 0;
+}
+
+.customSelect dd {
+    zoom: 1;
+    cursor: pointer;
+}
+
+.customSelect .selected {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3da9da;
+}
+
+.customSelect dd.hovered {
+    background: #3da9da;
+    color: #fff;
+}
+
+.customSelect dt {
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px 10px 5px 6px;
+}
+
+.customSelect dd {
+    padding: 5px 10px 2px 8px;
+}
+
+.customSelect .caret {
+    width: 9px;
+    height: 5px;
+    cursor: pointer;
+    display: block;
+    background-position: 0 0;
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    z-index: 150;
+}
+
+
+/*tab*/
+
+.tab_content>div {
+    display: none;
 }
 
 
 /* css common */
+
+.r-3x {
+    border-radius: 3px;
+}
 
 .underline {
     text-decoration: underline;
@@ -200,14 +293,15 @@ html {
 
 /*header*/
 
-.header-top {
+.site-nav,
+.site-nav {
     height: 40px;
     line-height: 40px;
     color: #8f8f8f;
     background: #333;
 }
 
-.header-top a {
+.site-nav a {
     color: #8f8f8f;
 }
 
@@ -215,11 +309,11 @@ html {
     margin-left: 25px;
 }
 
-.header {
+.main-nav {
     margin-bottom: 8px;
 }
 
-.header .logo {
+.main-nav .logo {
     padding-top: 20px;
 }
 
@@ -242,4 +336,65 @@ html {
     font-weight: 700;
     color: #333;
     margin-left: 50px;
+}
+
+.category-bar .contentwrap {
+    padding: 0 22px;
+    height: 44px;
+}
+
+.category-head {
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.category-head .icon-celan {
+    font-size: 16px;
+}
+
+.category-right {
+    margin-left: 200px;
+}
+
+.searchbox {
+    width: 430px;
+    height: 30px;
+    margin-top: 7px;
+    padding-right: 1px;
+    background: #fff;
+}
+
+.searchbox input {
+    width: 250px;
+    height: 20px;
+    padding-left: 10px;
+    border: 0;
+    border-left: 1px solid #d2d2d2;
+    vertical-align: top;
+    margin-top: 5px;
+    outline: none;
+    color: #444;
+}
+
+.searchbox .search-btn {
+    width: 80px;
+    height: 28px;
+    margin-top: 1px;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.pull-news {
+    margin-left: 10px;
+    vertical-align: top;
+    line-height: 44px;
+}
+
+.pull-news a {
+    margin-right: 5px;
+    color: #fff;
 }
