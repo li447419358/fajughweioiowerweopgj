@@ -203,6 +203,14 @@ select.J-select {
 
 /*tab*/
 
+.tab .tab_head {
+    overflow: hidden;
+}
+
+.tab .tab_head li {
+    float: left;
+}
+
 .tab_content>div {
     display: none;
 }
@@ -262,6 +270,18 @@ select.J-select {
     color: #fc9917;
 }
 
+.bg-img-orange {
+    background: url(images/bg-img-orange.jpg) no-repeat top center;
+}
+
+.bg-img-blue {
+    background-image: url(images/bg-img-blue.jpg)no-repeat top center;
+}
+
+.bg-img-purple {
+    background-image: url(images/bg-img-purple.jpg)no-repeat top center;
+}
+
 
 /*margin*/
 
@@ -299,6 +319,10 @@ select.J-select {
 
 .m-b-lg {
     margin-bottom: 25px;
+}
+
+.m-t-lmd {
+    margin-top: 20px;
 }
 
 
@@ -466,6 +490,7 @@ select.J-select {
 }
 
 .category-menu ul>li a {
+    font-size: 14px;
     color: #fff;
 }
 
@@ -575,4 +600,107 @@ select.J-select {
 
 .help-icon .iconfont {
     font-size: 24px;
+}
+
+
+/*floor*/
+
+.floor-box {
+    height: 414px;
+}
+
+.floor-box .left {
+    width: 190px;
+    height: 414px;
+    position: relative;
+}
+
+.floor-box .right {
+    width: 910px;
+    height: 414px;
+    background: #fff;
+}
+
+.floor-box .floor-title {
+    font-size: 28px;
+    color: #fff;
+    margin-top: 32px;
+    margin-left: 23px;
+}
+
+.floor-box .white-line {
+    width: 145px;
+    height: 1px;
+    background: #fff;
+    margin: 50px auto;
+}
+
+.floor-left-nav {
+    width: 165px;
+    margin: 0 auto;
+}
+
+.floor-left-nav a {
+    float: left;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+.floor-left-nav a:hover {
+    text-decoration: none;
+}
+
+.floor-left-nav a:first-child {
+    margin-right: 5px;
+}
+
+.floor-left-nav>p {
+    height: 28px;
+}
+
+.floor-left-nav p:first-child {
+    margin-bottom: 5px;
+}
+
+.floor-icon {
+    width: 190px;
+    position: absolute;
+    left: auto;
+    right: auto;
+    bottom: 35px;
+    text-align: center;
+}
+
+.floor-box .right .right-inner {
+    padding: 18px 28px 0 18px;
+}
+
+.floor-box .right .tab_head li {
+    width: 130px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    text-align: center;
+    color: #989898;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+
+/*floor color*/
+
+.floor-orange .floor-left-nav {
+    background: #fad159;
+}
+
+.floor-orange .floor-left-nav a {
+    background: #fcaf0e;
+}
+
+.floor-orange .right .tab_head li.tab_selected {
+    color: #fff;
+    background: #ffb956;
 }
