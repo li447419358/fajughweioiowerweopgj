@@ -31,9 +31,9 @@ td {
 }
 
 body {
-    background: #fff;
+    background: #f2f2f2;
     color: #444;
-    font: 12px"宋体", "Arial Narrow", HELVETICA;
+    font: 12px"微软雅黑", "Arial Narrow", HELVETICA;
 }
 
 td,
@@ -218,6 +218,11 @@ select.J-select {
     text-decoration: underline;
 }
 
+.underline-n:hover,
+.underline-n a:hover {
+    text-decoration: none;
+}
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -232,6 +237,10 @@ select.J-select {
 
 
 /*color*/
+
+.bg-white {
+    background: #fff;
+}
 
 .bg-blue-dark {
     background: #3da9da;
@@ -266,6 +275,37 @@ select.J-select {
 
 .m-l-lg {
     margin-left: 25px;
+}
+
+.m-r-sm {
+    margin-right: 10px;
+}
+
+.m-r-md {
+    margin-right: 15px;
+}
+
+.m-r-lg {
+    margin-right: 25px;
+}
+
+.m-b-sm {
+    margin-bottom: 10px;
+}
+
+.m-b-md {
+    margin-bottom: 15px;
+}
+
+.m-b-lg {
+    margin-bottom: 25px;
+}
+
+
+/*width*/
+
+.w-650 {
+    width: 650px;
 }
 
 
@@ -338,7 +378,7 @@ select.J-select {
     margin-left: 50px;
 }
 
-.category-bar .contentwrap {
+.category-bar .category-bar-inner {
     padding: 0 22px;
     height: 44px;
 }
@@ -347,6 +387,10 @@ select.J-select {
     line-height: 44px;
     color: #fff;
     font-size: 14px;
+}
+
+.category-head a {
+    color: #fff;
 }
 
 .category-head .icon-celan {
@@ -397,4 +441,138 @@ select.J-select {
 .pull-news a {
     margin-right: 5px;
     color: #fff;
+}
+
+
+/*fs*/
+
+.fs {
+    margin-top: 10px;
+}
+
+.category-menu {
+    width: 190px;
+    height: 480px;
+}
+
+.category-menu ul {
+    padding: 15px 0 0;
+}
+
+.category-menu ul>li {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.category-menu ul>li a {
+    color: #fff;
+}
+
+.fs-center {
+    width: 650px;
+}
+
+.fs-center img {
+    float: left;
+}
+
+.fs-right {
+    width: 240px;
+    height: 480px;
+}
+
+.publish-btn {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.publish-btn a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+
+.fs-right-bottom {
+    height: 430px;
+    background: #fff;
+}
+
+.login-panel {
+    height: 129px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.login-panel .icon-yonghu {
+    font-size: 50px;
+}
+
+.login-panel .login-info {
+    padding-left: 45px;
+    padding-top: 19px;
+}
+
+.login-panel .login-info p {
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+.userIcon {
+    width: 49px;
+    height: 49px;
+    background: url(images/user.png) no-repeat;
+}
+
+.login-group {
+    text-align: center;
+}
+
+.login-group a {
+    width: 74px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 8px;
+    color: #fff;
+}
+
+.panel-news {
+    padding: 19px 19px 5px 19px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.panel-news .head {
+    font-size: 14px;
+}
+
+.panel-news .icon-dian2 {
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: -2px;
+    color: #aaa;
+}
+
+.panel-news li {
+    line-height: 24px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.panel-news a {
+    color: #565656;
+}
+
+.help-icon {
+    text-align: center;
+}
+
+.help-icon>div {
+    margin: 10px 20px 0;
+}
+
+.help-icon .iconfont {
+    font-size: 24px;
 }
