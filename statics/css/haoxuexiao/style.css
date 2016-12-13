@@ -962,3 +962,65 @@ select.J-select {
     color: #fff;
     background: #9162de;
 }
+
+
+/*index-botoom*/
+
+.index-botoom {
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #eaeaea;
+}
+
+.index-botoom .title {
+    font-size: 14px;
+    color: #333;
+    margin: 20px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.coo-brand li {
+    float: left;
+    margin: 0 15px 20px;
+    width: 80px;
+    height: 50px;
+}
+
+.coo-brand li img {
+    width: 80px;
+    height: 50px;
+}
+
+.friendly-link a {
+    margin-right: 5px;
+    line-height: 28px;
+}
+
+
+/*footer*/
+
+.footer {
+    padding: 20px 0;
+    color: #fff;
+    background: #323232;
+}
+
+.footer a {
+    margin-right: 15px;
+    color: #fff;
+}
+
+.footer-nav {
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.wechat-box {
+    width: 90px;
+}
+
+.wechat-box span {
+    float: left;
+    width: 18px;
+}
