@@ -1,52 +1,69 @@
 $(function () {
-    if ($("#MagnifierWrap").size() > 0) {
-        MagnifierF("MagnifierWrap"); //产品放大镜
-    }
-    hidefliter(2);
-    //首页搜索
-    $("select.J-select").each(function () {
-        var sb = new SelectBox({
-            selectbox: $(this),
-            width: 80
-        });
-    });
+    /* if ($("#MagnifierWrap").size() > 0) {
+         MagnifierF("MagnifierWrap"); //产品放大镜
+     }
+     hidefliter(2);
+     //首页搜索
+     $("select.J-select").each(function () {
+         var sb = new SelectBox({
+             selectbox: $(this),
+             width: 80
+         });
+     });*/
     $("select.J_pb_select").each(function () { //产品页 排序选择
         var sb = new SelectBox({
             selectbox: $(this),
             width: 147
         });
     });
-    $(".tab").tab({
-        tab_type: "mouseover"
-    });
-    $(".J_lastNobor").each(function (e) {
-        $(this).find("li").last().css("borderWidth", "0");
-    })
-    $(".J_lastborder tr").last().find("td").css("borderWidth", "0");
-    $(".slide-box").imagesSlide(); //广告图切换
 
-    $(".technology").tab({
-        tab_type: "mouseover"
+    /* $(".tab").tab({
+         tab_type: "mouseover"
+     });
+     $(".J_lastNobor").each(function (e) {
+         $(this).find("li").last().css("borderWidth", "0");
+     })
+     $(".J_lastborder tr").last().find("td").css("borderWidth", "0");
+     $(".slide-box").imagesSlide(); //广告图切换
+
+     $(".technology").tab({
+         tab_type: "mouseover"
+     });
+     $(".special-box li").last().css("paddingBottom", "10px");
+     $(".pl_group .pl_row,.J_news_style1").last().css({
+         "border": "none",
+         "margin": "0"
+     })
+     $(".J-productClass").on("mouseover", "li", function () {
+         $(this).addClass("hover");
+     })
+     $(".J-productClass").on("mouseout", "li", function () {
+         $(this).removeClass("hover");
+     });
+     $(".J_marquee_list").marquee({ //
+         auto: true,
+         interval: 3000,
+         speed: 500,
+         showNum: 6,
+         stepLen: 6
+     });*/
+    setMenu(".j-mainmenubox>li>a", ".j-submenubox");
+    setMenu(".j-submenubox", ".j-submenubox");
+    $(".j-mainmenubox>li>a").hover(function () {
+        $(this).next(".j-submenubox").stop().fadeIn();
+    }, function () {
+        $(this).next(".j-submenubox").stop().fadeOut();
     });
-    $(".special-box li").last().css("paddingBottom", "10px");
-    $(".pl_group .pl_row,.J_news_style1").last().css({
-        "border": "none",
-        "margin": "0"
-    })
-    $(".J-productClass").on("mouseover", "li", function () {
-        $(this).addClass("hover");
-    })
-    $(".J-productClass").on("mouseout", "li", function () {
-        $(this).removeClass("hover");
-    });
-    $(".J_marquee_list").marquee({ //
-        auto: true,
-        interval: 3000,
-        speed: 500,
-        showNum: 6,
-        stepLen: 6
+    $(".j-submenubox").hover(function () {
+        $(this).stop().fadeIn();
+    }, function () {
+        $(this).stop().fadeOut();
     });
 });
+
+function setMenu(parentele, childBox) {
+
+}
 // 加入收藏
 function addFavorite() {
     var url = window.location;

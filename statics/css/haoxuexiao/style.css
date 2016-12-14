@@ -248,6 +248,10 @@ select.J-select {
     border-bottom: 1px solid #dbdbdb;
 }
 
+.rbox {
+    position: relative;
+}
+
 
 /*color*/
 
@@ -507,19 +511,41 @@ select.J-select {
     height: 480px;
 }
 
-.category-menu ul {
+.category-menu>ul {
     padding: 15px 0 0;
 }
 
-.category-menu ul>li {
+.category-menu>ul>li {
     height: 30px;
     line-height: 30px;
-    padding-left: 20px;
+    cursor: pointer;
 }
 
-.category-menu ul>li a {
+.category-menu>ul>li>a {
+    display: block;
+    padding-left: 20px;
     font-size: 14px;
     color: #fff;
+    cursor: pointer;
+}
+
+.category-menu>ul>li>a:hover {
+    color: #333;
+    background: #fff;
+}
+
+
+/*sub-menu-box*/
+
+.sub-menu-box {
+    display: none;
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 620px;
+    padding: 20px;
+    height: 441px;
+    background: #fff;
 }
 
 .fs-center {
