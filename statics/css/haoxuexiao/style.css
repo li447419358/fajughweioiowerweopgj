@@ -232,6 +232,10 @@ select.J-select {
     text-decoration: none;
 }
 
+.clear {
+    clear: both;
+}
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -362,6 +366,40 @@ select.J-select {
 
 .one-third {
     width: 33%;
+}
+
+
+/*pagination*/
+
+.pagination {}
+
+.pagination a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
+
+.pagination .curruntPage,
+.pagination a:hover {
+    background: #48bffb;
+    border-color: #48bffb;
+    color: #fff;
+}
+
+.pagination .nextPage {
+    width: auto;
 }
 
 
@@ -1050,3 +1088,103 @@ select.J-select {
     float: left;
     width: 18px;
 }
+
+
+/*导航*/
+
+.crumbs {
+    margin: 20px 0 15px;
+    color: #575757;
+    font-size: 14px;
+}
+
+.crumbs a {
+    color: #767676;
+}
+
+.arrowL {
+    font-family: "宋体";
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+
+/*分栏盒子*/
+
+.grid-box .boxL {
+    width: 820px;
+    margin-right: 20px;
+    background: #fff;
+}
+
+.grid-box .boxR {
+    width: 260px;
+    background: #fff;
+}
+
+.school-item-box {
+    padding: 10px 25px;
+}
+
+.school-item-box li {
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.school-item-box li:last-child {
+    border: 0;
+}
+
+.school-item-box a>img {
+    float: left;
+    width: 180px;
+    height: 120px;
+}
+
+.detail-btn {
+    width: 116px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    float: right;
+}
+
+.school-info {
+    margin-left: 195px;
+    margin-right: 160px;
+    color: #666;
+    font-size: 14px;
+}
+
+.school-info p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.school-info .top_item {
+    padding: 5px 15px;
+    background: #3da9da;
+    color: #fff;
+}
+
+.school-info .top_item a {
+    color: #fff;
+}
+
+.school-info .normal-item a {
+    font-size: 16px;
+    color: #3da9da;
+}
+
+.school-info .normal-item span {
+    color: #ef8800;
+}
+
+
+/*分栏标题*/
+
+.col-title {}

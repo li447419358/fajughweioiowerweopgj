@@ -13,40 +13,40 @@ $(function () {
     $("select.J_pb_select").each(function () { //产品页 排序选择
         var sb = new SelectBox({
             selectbox: $(this),
-            width: 147
+            width: 80
         });
     });
 
-    /* $(".tab").tab({
-         tab_type: "mouseover"
-     });
-     $(".J_lastNobor").each(function (e) {
-         $(this).find("li").last().css("borderWidth", "0");
-     })
-     $(".J_lastborder tr").last().find("td").css("borderWidth", "0");
-     $(".slide-box").imagesSlide(); //广告图切换
+    $(".tab").tab({
+        tab_type: "mouseover"
+    });
+    /*$(".J_lastNobor").each(function (e) {
+        $(this).find("li").last().css("borderWidth", "0");
+    })
+    $(".J_lastborder tr").last().find("td").css("borderWidth", "0");
+    $(".slide-box").imagesSlide(); //广告图切换
 
-     $(".technology").tab({
-         tab_type: "mouseover"
-     });
-     $(".special-box li").last().css("paddingBottom", "10px");
-     $(".pl_group .pl_row,.J_news_style1").last().css({
-         "border": "none",
-         "margin": "0"
-     })
-     $(".J-productClass").on("mouseover", "li", function () {
-         $(this).addClass("hover");
-     })
-     $(".J-productClass").on("mouseout", "li", function () {
-         $(this).removeClass("hover");
-     });
-     $(".J_marquee_list").marquee({ //
-         auto: true,
-         interval: 3000,
-         speed: 500,
-         showNum: 6,
-         stepLen: 6
-     });*/
+    $(".technology").tab({
+        tab_type: "mouseover"
+    });
+    $(".special-box li").last().css("paddingBottom", "10px");
+    $(".pl_group .pl_row,.J_news_style1").last().css({
+        "border": "none",
+        "margin": "0"
+    })
+    $(".J-productClass").on("mouseover", "li", function () {
+        $(this).addClass("hover");
+    })
+    $(".J-productClass").on("mouseout", "li", function () {
+        $(this).removeClass("hover");
+    });
+    $(".J_marquee_list").marquee({ //
+        auto: true,
+        interval: 3000,
+        speed: 500,
+        showNum: 6,
+        stepLen: 6
+    });*/
     setMenu(".j-mainmenubox>li>a", ".j-submenubox");
     setMenu(".j-submenubox", ".j-submenubox");
     $(".j-mainmenubox>li>a").hover(function () {
