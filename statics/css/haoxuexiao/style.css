@@ -101,15 +101,56 @@ html {
 }
 
 
-/*icon*/
+/*share icon*/
+
+.sharebox {
+    width: 160px;
+    height: 27px;
+    line-height: 27px;
+    padding-bottom: 20px;
+}
+
+.bshare-custom {
+    line-height: 27px;
+}
+
+.bshare-custom a {
+    width: 24px;
+    height: 27px !important;
+    line-height: 24px;
+    padding: 0;
+    background-image: url(images/mybutton.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.bshare-custom .qqmb {
+    background-position: 0px 0;
+}
+
+.bshare-custom .qzone {
+    background-position: -29px 0;
+}
+
+.bshare-custom .qqim {
+    background-position: -58px 0;
+}
+
+.bshare-custom .sinaminiblog {
+    background-position: -87px 0;
+}
+
+.bshare-custom .bshare-more {
+    background-position: -116px 0;
+}
+
+
+/*selectbox*/
 
 .customSelect .caret {
     background-image: url(images/icon.png);
     background-repeat: no-repeat;
 }
-
-
-/*selectbox*/
 
 select.J-select {
     position: absolute;
@@ -248,12 +289,34 @@ select.J-select {
     *zoom: 1;
 }
 
+.hide {
+    display: none;
+}
+
 .hr-line {
     border-bottom: 1px solid #dbdbdb;
 }
 
 .rbox {
     position: relative;
+}
+
+
+/*text-align*/
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/*font*/
+
+.f24 {
+    font-size: 24px;
 }
 
 
@@ -353,6 +416,14 @@ select.J-select {
     padding: 10px;
 }
 
+.p-l-2em {
+    padding-left: 2em;
+}
+
+.p-l-_5em {
+    padding-left: 0.5em;
+}
+
 
 /*width*/
 
@@ -422,6 +493,7 @@ select.J-select {
 .contentwrap {
     width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -493,6 +565,13 @@ select.J-select {
 
 .category-right {
     margin-left: 200px;
+}
+
+#J-category-menu {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    z-index: 999;
 }
 
 .searchbox {
@@ -1114,13 +1193,18 @@ select.J-select {
 .grid-box .boxL {
     width: 820px;
     margin-right: 20px;
-    background: #fff;
 }
 
 .grid-box .boxR {
     width: 260px;
-    background: #fff;
 }
+
+.boxR-inner {
+    padding: 0 20px 50px;
+}
+
+
+/*学校列表*/
 
 .school-item-box {
     padding: 10px 25px;
@@ -1185,6 +1269,156 @@ select.J-select {
 }
 
 
+/*招聘列表*/
+
+.job-item-box {
+    padding: 10px 25px;
+}
+
+.job-item-box li {
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.job-item-box li:last-child {
+    border: 0;
+}
+
+.job-info {
+    width: 375px;
+    float: left;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.job-date {
+    font-size: 14px;
+    margin-left: 475px;
+    margin-right: 170px;
+}
+
+.job-date P {
+    margin-bottom: 10px;
+}
+
+.job-data-num {
+    padding-left: 24px;
+}
+
+.job-info p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.job-info .top_item {
+    padding: 5px 15px;
+    background: #3da9da;
+    color: #fff;
+}
+
+.job-info .top_item a {
+    color: #fff;
+}
+
+.job-info .normal-item a {
+    font-size: 16px;
+    color: #3da9da;
+}
+
+.job-info .normal-item span {
+    color: #ef8800;
+}
+
+
 /*分栏标题*/
 
-.col-title {}
+.col-title {
+    padding: 20px;
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.col-title a {
+    color: #989898;
+    font-size: 12px;
+}
+
+.boxR-inner .news-list a {
+    width: 180px;
+    margin-right: 0;
+    color: #565656;
+}
+
+.boxR-inner .news-list li.news-line {
+    height: auto;
+    line-height: normal;
+    margin: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+
+/*detail*/
+
+.detail-topbox {
+    padding: 30px;
+}
+
+.detail-topbox-L {
+    width: 750px;
+}
+
+.detail-topbox-R {
+    margin-top: -10px;
+    width: 265px;
+    height: 343px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b6b6b;
+    background: #f6f6f6;
+}
+
+.detail-topbox-R p {
+    margin-bottom: 25px;
+}
+
+.detail-topbox-R .user-name {
+    color: #404040;
+}
+
+.detail-title {
+    font-size: 20px;
+    color: #3da9da;
+}
+
+.detail-topbox-L img {
+    float: left;
+    width: 350px;
+    height: 266px;
+}
+
+.property {
+    margin-left: 390px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+.view_num {
+    font-size: 12px;
+    color: #868686;
+    margin-top: 10px;
+}
+
+.property .view_num {
+    font-size: 12px;
+}
+
+.property-ul {
+    margin-top: 25px;
+}
+
+.property-ul li {
+    padding: 8px 0;
+}

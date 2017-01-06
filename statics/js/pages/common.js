@@ -47,8 +47,17 @@ $(function () {
         showNum: 6,
         stepLen: 6
     });*/
-    setMenu(".j-mainmenubox>li>a", ".j-submenubox");
-    setMenu(".j-submenubox", ".j-submenubox");
+    $("#J-category-bar").on("mouseover", function () {
+        $("#J-category-menu").show();
+    }).on("mouseout", function () {
+        $("#J-category-menu").hide();
+    })
+    $("#J-category-menu").on("mouseover", function () {
+        $("#J-category-menu").show();
+    }).on("mouseout", function () {
+        $("#J-category-menu").hide();
+    })
+
     $(".j-mainmenubox>li>a").hover(function () {
         $(this).next(".j-submenubox").stop().fadeIn();
     }, function () {
@@ -61,9 +70,6 @@ $(function () {
     });
 });
 
-function setMenu(parentele, childBox) {
-
-}
 // 加入收藏
 function addFavorite() {
     var url = window.location;
