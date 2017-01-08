@@ -20,33 +20,51 @@ $(function () {
     $(".tab").tab({
         tab_type: "mouseover"
     });
-    /*$(".J_lastNobor").each(function (e) {
-        $(this).find("li").last().css("borderWidth", "0");
-    })
-    $(".J_lastborder tr").last().find("td").css("borderWidth", "0");
-    $(".slide-box").imagesSlide(); //广告图切换
+    $("#obj-details").tab({
+        tab_type: "click"
+    });
+    $('#demo1').banqh({
+            box: "#slide_box", //总框架
+            pic: "#slide-bigImg", //大图框架
+            pnum: "#slide-pnum", //小图框架
+            prev_btn: "#prev_btn", //小图左箭头
+            next_btn: "#next_btn", //小图右箭头
+            autoplay: false, //是否自动播放
+            interTime: 5000, //图片自动切换间隔
+            delayTime: 400, //切换一张图片时间
+            pop_delayTime: 400, //弹出框切换一张图片时间
+            order: 0, //当前显示的图片（从0开始）
+            picdire: true, //大图滚动方向（true为水平方向滚动）
+            mindire: true, //小图滚动方向（true为水平方向滚动）
+            min_picnum: 5, //小图显示数量
+        })
+        /*$(".J_lastNobor").each(function (e) {
+            $(this).find("li").last().css("borderWidth", "0");
+        })
+        $(".J_lastborder tr").last().find("td").css("borderWidth", "0");
+        $(".slide-box").imagesSlide(); //广告图切换
 
-    $(".technology").tab({
-        tab_type: "mouseover"
-    });
-    $(".special-box li").last().css("paddingBottom", "10px");
-    $(".pl_group .pl_row,.J_news_style1").last().css({
-        "border": "none",
-        "margin": "0"
-    })
-    $(".J-productClass").on("mouseover", "li", function () {
-        $(this).addClass("hover");
-    })
-    $(".J-productClass").on("mouseout", "li", function () {
-        $(this).removeClass("hover");
-    });
-    $(".J_marquee_list").marquee({ //
-        auto: true,
-        interval: 3000,
-        speed: 500,
-        showNum: 6,
-        stepLen: 6
-    });*/
+        $(".technology").tab({
+            tab_type: "mouseover"
+        });
+        $(".special-box li").last().css("paddingBottom", "10px");
+        $(".pl_group .pl_row,.J_news_style1").last().css({
+            "border": "none",
+            "margin": "0"
+        })
+        $(".J-productClass").on("mouseover", "li", function () {
+            $(this).addClass("hover");
+        })
+        $(".J-productClass").on("mouseout", "li", function () {
+            $(this).removeClass("hover");
+        });
+        $(".J_marquee_list").marquee({ //
+            auto: true,
+            interval: 3000,
+            speed: 500,
+            showNum: 6,
+            stepLen: 6
+        });*/
     $("#J-category-bar").on("mouseover", function () {
         $("#J-category-menu").show();
     }).on("mouseout", function () {
