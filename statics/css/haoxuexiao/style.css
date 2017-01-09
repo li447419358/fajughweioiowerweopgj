@@ -104,7 +104,7 @@ html {
 /*share icon*/
 
 .sharebox {
-    width: 160px;
+    width: 200px;
     height: 27px;
     line-height: 27px;
     padding-bottom: 20px;
@@ -112,12 +112,14 @@ html {
 
 .bshare-custom {
     line-height: 27px;
+    white-space: nowrap;
 }
 
 .bshare-custom a {
     width: 24px;
     height: 27px !important;
     line-height: 24px;
+    white-space: nowrap;
     padding: 0;
     background-image: url(images/mybutton.png);
     background-repeat: no-repeat;
@@ -414,6 +416,10 @@ select.J-select {
 
 .p10 {
     padding: 10px;
+}
+
+.p30 {
+    padding: 30px;
 }
 
 .p-l-2em {
@@ -1534,4 +1540,30 @@ select.J-select {
 
 #slide-pnum ul li.on img {
     border-color: #3da9da;
+}
+
+.news-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.small-title {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.h-line {
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-page {
+    margin-top: 30px;
+}
+
+.news-page p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
 }
