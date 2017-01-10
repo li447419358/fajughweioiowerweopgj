@@ -612,7 +612,7 @@ select.J-select {
 }
 
 .pull-news {
-    margin-left: 10px;
+    margin-left: 20px;
     vertical-align: top;
     line-height: 44px;
 }
@@ -1566,4 +1566,42 @@ select.J-select {
     font-size: 14px;
     color: #555;
     margin-bottom: 15px;
+}
+
+
+/*contactbox*/
+
+.contactbox {
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+.sidebar {}
+
+.sidebar ul {
+    padding-top: 50px;
+}
+
+.sidebar ul li {
+    padding: 5px 0 5px 30px;
+}
+
+.sidebar ul li a {
+    margin: 0 10px;
+}
+
+.sidebar ul li .icon-arrow-right {
+    visibility: hidden;
+    vertical-align: -2px
+}
+
+.sidebar ul li.active,
+.sidebar ul li.active a,
+.sidebar ul li.active .icon-arrow-right {
+    visibility: visible;
+    color: #3da9da;
+}
+
+.contact-content {
+    padding: 40px;
 }
