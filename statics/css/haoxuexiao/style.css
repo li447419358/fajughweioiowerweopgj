@@ -291,6 +291,10 @@ select.J-select {
     *zoom: 1;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .hide {
     display: none;
 }
@@ -985,7 +989,7 @@ select.J-select {
 /*lesson-list*/
 
 .lesson-list {
-    margin-right: -30px;
+    width: 9999px;
 }
 
 .lesson-list li {
