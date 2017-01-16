@@ -5,13 +5,6 @@ $(function () {
             width: 80
         });
     });
-    $('#marquee_slide').marquee({
-        auto: true,
-        interval: 3000,
-        speed: 1000,
-        showNum: 5,
-        stepLen: 5
-    });
     $(".tab").tab({
         tab_type: "mouseover"
     });
